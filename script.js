@@ -1,4 +1,6 @@
-// Basit etkileşimli script örneği
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("Welcome to Gökhan Yazgan's Portfolio Website");
+  const toggleButton = document.getElementById("themeToggle");
+  toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+  });
 });
